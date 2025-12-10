@@ -1,7 +1,16 @@
 
-# TSF Showcase: The Self-Maintaining Service Node
+|<sub>🇬🇧 [English translation →](README.en.md)</sub>|
+|----:|
+|    |
 
-Dieses Projekt ist das **"Big Picture"** der *Tiny Smalltalk Framework* (TSF) Suite.
+|[![Pharo Version](https://img.shields.io/badge/Pharo-12.0%2B-blue.svg)](https://pharo.org)|[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE) [![Dependencies](https://img.shields.io/badge/dependencies-less-brightgreen.svg)](#)|
+|----|----|
+|![TSF-Showcase Logo](logo-showcase.png)| ***TSF-Showcase***<br>Das "Big Picture" der Tiny Smalltalk Framework (TSF) Suite|
+
+<sup>***TSF*** steht für ***Tiny Smalltalk Framework*** — eine Sammlung von minimalistischen Tools für robuste Anwendungen.</sup>
+
+
+## TSF Showcase: The Self-Maintaining Service Node
 
 Es ist keine Library, sondern eine Referenz-Implementierung. Sie demonstriert, wie die vier spezialisierten TSF-Komponenten (**Logger, Scheduler, FileRotator, NexIO**) ineinandergreifen, um eine robuste, wartungsfreie und fernsteuerbare Server-Anwendung zu erstellen.
 

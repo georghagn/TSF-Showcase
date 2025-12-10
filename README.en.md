@@ -1,6 +1,15 @@
-# TSF Showcase: The Self-Maintaining Service Node
+|<sub>🇩🇪 [German translation →](README.de.md)</sub>|
+|----:|
+|    |
 
-> **The "Big Picture" demonstration of the Tiny Smalltalk Framework (TSF) suite.**
+|[![Pharo Version](https://img.shields.io/badge/Pharo-12.0%2B-blue.svg)](https://pharo.org)|[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE) [![Dependencies](https://img.shields.io/badge/dependencies-less-brightgreen.svg)](#)|
+|----|----|
+|![TSF-Showcase Logo](logo-showcase.png)| ***TSF-Showcase***<br>The "Big Picture" demonstration of the Tiny Smalltalk Framework (TSF) suite
+
+<sup>***TSF*** stands for ***Tiny Smalltalk Framework*** — a collection of minimalist tools for robust applications.</sup>
+
+
+## TSF Showcase: The Self-Maintaining Service Node
 
 This project serves as a reference implementation, illustrating how the four specialized TSF components (**Logger, Scheduler, FileRotator, NexIO**) integrate seamlessly to create a robust, self-maintaining, and remotely controllable server application.
 
@@ -26,10 +35,11 @@ The `TsfServiceNode` acts as the orchestrator ("glue code"), initializing and co
 
 | Layer | Component | Role in this Showcase |
 | :--- | :--- | :--- |
-| **1. Communication** | **TSF-NexIO** | The gateway. Provides a JSON-RPC 2.0 WebSocket server on port 8080. |
-| **2. Control** | **TSF-Scheduler** | The heartbeat. Triggers the rotation task every 5 minutes reliably in the background. |
-| **3. Maintenance** | **TSF-FileRotator** | The worker. A POJO that checks file sizes, rotates logs, zips them, and handles retention (cleanup). |
-| **4. Foundation** | **TSF-Logger** | The memory. Provides thread-safe file logging used simultaneously by background tasks and network requests. |
+| *1. Communication* | *TSF-NexIO* | The gateway. Provides a JSON-RPC 2.0 WebSocket server on port 8080. |
+| *2. Control* | *TSF-Scheduler* | The heartbeat. Triggers the rotation task every 5 minutes reliably in the background. |
+| *3. Maintenance* | *TSF-FileRotator* | The worker. A POJO that checks file sizes, rotates logs, zips them, and handles retention (cleanup). |
+| *4. Foundation* | *TSF-Logger* | The memory. Provides thread-safe file logging used simultaneously by background tasks and network requests. |
+
 
 -----
 
@@ -131,9 +141,5 @@ serverNode stop.
 Developed as a Proof-of-Concept for modular Smalltalk architectures.
 
 📧 *georghagn [at] tiny-frameworks.io*
-
-*(Ende des README.md Inhalts)*
-
------
 
 
