@@ -79,7 +79,7 @@ Load the showcase project using Metacello. This will automatically fetch all nec
 
 ```smalltalk
 Metacello new
-    baseline: 'TSFShowcase';
+    baseline: 'TsfShowcase';
     repository: 'github://georghagn/TSF-Showcase:main';
     load.
 ```
