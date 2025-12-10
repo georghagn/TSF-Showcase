@@ -13,22 +13,22 @@ BaselineOfTsfShowcase >> baseline: spec [
         
         "1. Dependencies (extern TSF Frameworks)"
         spec
-            baseline: 'TSFLogger' 
+            baseline: 'TsfLogger' 
             with: [ spec repository: 'github://georghagn/TSF-Logger:main' ];
             
-            baseline: 'TSFScheduler' 
+            baseline: 'TsfScheduler' 
             with: [ spec repository: 'github://georghagn/TSF-Scheduler:main' ];
             
-            baseline: 'TSFFileRotator' 
+            baseline: 'TsfFileRotator' 
             with: [ spec repository: 'github://georghagn/TSF-FileRotator:main' ];
             
-            baseline: 'TSFNexIO' 
+            baseline: 'TsfNexIO' 
             with: [ spec repository: 'github://georghagn/TSF-NexIO:main' ].
 
         "2. Packages"
-        spec package: 'TSF-Showcase' with: [ 
+        spec package: 'TsfShowcase' with: [ 
             "Showcase needs all 4 components"
-            spec requires: #('TSFLogger' 'TSFScheduler' 'TSFFileRotator' 'TSFNexIO') 
+            spec requires: #('TSF-Logger' 'TSF-Scheduler' 'TSF-FileRotator' 'TSF-NexIO') 
         ].
 
         "3. groups (Standard: load everything)"
