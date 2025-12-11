@@ -26,7 +26,7 @@ BaselineOfTsfShowcase >> baseline: spec [
             with: [ spec repository: 'github://georghagn/TSF-NexIO:main' ].
 
         "2. Packages"
-        spec package: 'TsfShowcase' with: [ 
+        spec package: 'TSF-Showcase' with: [ 
             "Showcase needs all 4 components"
             spec requires: #('TSF-Logger' 'TSF-Scheduler' 'TSF-FileRotator' 'TSF-NexIO') 
         ].
