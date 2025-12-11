@@ -28,7 +28,7 @@ BaselineOfTsfShowcase >> baseline: spec [
         "2. Packages"
         spec package: 'TSF-Showcase' with: [ 
             "Showcase needs all 4 components"
-            spec requires: #('TSF-Logger' 'TSF-Scheduler' 'TSF-FileRotator' 'TSF-NexIO') 
+            spec includes: #('TsfLogger' 'TsfScheduler' 'TsfFileRotator' 'TsfNexIO' )
         ].
 
         "3. groups (Standard: load everything)"
